@@ -1,0 +1,87 @@
+.location-section {
+    background-color: rgb(14, 14, 14);
+    width: 100%;
+}
+.location-section .location-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.location-section .location-container .location-flex {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.location-section .location-container .location-flex a {
+    width: 400px;
+    min-height: 370px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(88, 88, 88);
+    text-decoration: none;
+    font-family: 'Roboto';
+    position: relative;
+    color: white;
+    transition: all 500ms;
+}
+.location-section .location-container .location-flex a:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: rgb(10, 10, 10);
+    font-weight: 800;
+}
+.location-section .location-container .location-flex a .image-box img {
+    width: 398px;
+    height: 194px;
+    object-fit: cover;
+}
+.location-section .location-container .location-flex a .text-box {
+    text-align: center;
+}
+.location-section .location-container .location-flex a .text-box  h3 {
+    color: orangered;
+    padding-top: 10px;
+}
+.location-section .location-container .location-flex a .text-box p {
+    font-size: 14px;
+    padding-top: 20px;
+}
+.location-section .location-container .location-flex a .text-box span {
+    background-color: orangered;
+    font-size: 18px;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 145px;
+    border: 1px solid transparent;
+    color: white;
+    transition: all 500ms;
+}
+.location-section .location-container .location-flex a .text-box span:hover {
+    background-color: white;
+    border: 1px solid orangered;
+    color: orangered;
+}
+@media only screen and (max-width:1200px) {
+    .location-section .location-container .location-flex {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .location-section .location-container .location-flex a {
+        margin: 5px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .location-section .location-container .location-flex a {
+        width: 300px;
+        min-height: 370px;
+    }
+    .location-section .location-container .location-flex a .image-box img {
+        width: 298px;
+        height: 194px;
+    }
+    .location-section .location-container .location-flex a .text-box span {
+        left: 95px;
+    }
+}

@@ -1,0 +1,49 @@
+.cenovnik-section {
+    background-color: rgb(19, 19, 19);
+    color: rgb(206, 206, 206);
+    padding: 20px;
+}
+.cenovnik-section table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.cenovnik-section table th {
+    border: 1px solid rgba(255, 255, 255, 0.377);
+    text-align: left;
+    padding: 15px;
+    font-family: sans-serif;
+    font-size: large;
+}
+.cenovnik-section .cenovnik-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.cenovnik-section .cenovnik-section-paragraph {
+    overflow-wrap: break-word;
+    color: orangered;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+.cenovnik-section .cenovnik-section-paragraph .p-dodaci-f{
+    padding-top: 40px;
+}
+.cenovnik-section .cenovnik-section-paragraph .p-dodaci {
+    font-weight: bold;
+}
+.cenovnik-section .cenovnik-section-paragraph .cenovnik-section-paddingtop {
+    padding-top: 40px;
+}
+.cenovnik-section .cenovnik-section-paragraph .cenovnik-section-paddingbottom {
+    padding-bottom: 40px;
+}
+.pbold {
+    font-weight: bold;
+}
+@media only screen and (max-width: 425px) {
+    .cenovnik-section .cenovnik-section-paragraph {
+        font-size: 18px;
+    }
+    .cenovnik-section table th {
+        font-size: 12px;
+    }
+}

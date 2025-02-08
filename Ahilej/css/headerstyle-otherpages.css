@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+header {
+    background-image: url('../images/blog_bg.png');
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    font-family: 'Roboto';
+}
+header h1 {
+    text-align: center;
+    color: white;
+    padding-top: 120px;
+    position: relative;
+    font-size: 40px;
+}
+header h1 span {
+    color: orangered;
+}
+header h1::before {
+    content: "";
+    position: absolute;
+    top: 200px;
+    left: 47.5%;
+    height: 2px;
+    width: 100px;
+    background-color: white;
+}
+/*-------KONTAKT-------*/
+.contact-section {
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(58, 58, 58, 0.616);
+}
+.contact-section .contact-section-ne {
+    display: flex;
+    font-size: 11px;
+}
+.contact-section .contact-section-ne .contact-section-email  {
+    padding-right: 2px;
+}
+.contact-section .contact-section-ne a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+.contact-section .contact-section-ne .contact-section-email a:hover {
+    color: orangered;
+}
+.contact-section .contact-section-ne a i {
+    color: orangered;
+    padding-right: 10px;
+}
+.contact-section .contact-section-ne .contact-section-number  {
+    padding-left: 25px;
+    transition: all 0.5s;
+}
+.contact-section .contact-section-ne .contact-section-number a:hover  {
+    color: orangered;
+}
+.contact-section .contact-section-social {
+    display: flex;
+    font-size: 18px;
+}
+.contact-section .contact-section-social .contact-section-facebook a {
+    color: white;
+    transition: all 500ms;
+}
+.contact-section .contact-section-social .contact-section-facebook a:hover {
+    color: orangered;
+}
+.contact-section .contact-section-social .contact-section-instagram a {
+    color: white;
+    padding-left: 20px;
+    transition: all 500ms;
+}
+.contact-section .contact-section-social .contact-section-instagram a:hover {
+    color: orangered;
+}
+.contact-section .contact-section-social .contact-section-youtube a {
+    color: white;
+    padding-left: 20px;
+    transition: all 500ms;
+}
+.contact-section .contact-section-social .contact-section-youtube a:hover {
+    color: orangered;
+}
+/*-------NAVIGACIJA-------*/
+.main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.main-nav .main-logo a {
+    text-decoration: none;
+    color: white;
+}
+.main-nav .main-logo a #logom {
+    height: 85px;
+    width: 55px;
+    object-fit: fill;
+}
+.main-nav .main-logo a #logow {
+    height: 85px;
+    width: 55px;
+    object-fit: fill;
+}
+.main-nav .main-logo a #logotext {
+    height: auto;
+    width: 200px;
+    object-fit: fill;
+    padding: 0 20px 30px 20px;
+}
+.main-nav .main-nav-menu {
+    padding-top: 25px;
+}
+.main-nav .main-nav-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 20px;
+}
+.main-nav .main-nav-menu ul li {
+    padding-left: 25px;
+    font-family: 'Roboto';
+}
+.main-nav .main-nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 500ms;
+}
+.main-nav .main-nav-menu ul li a:hover {
+    color: orangered;
+}
+.main-nav .main-nav-menu ul li a i {
+    color: orangered;
+    transition: all 500ms;
+}
+.main-nav .main-nav-menu ul li a i:hover {
+    color: white;
+}
+#hamburger, label {
+    display: none;
+}
+label i {
+    color: white;
+    position: absolute;
+    top: 95px;
+    right: 10px;
+    font-size: 40px;
+}
+.hamburgermenu {
+    background: rgba(58, 58, 58, 0.945);
+    position: fixed;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    padding: 50px;
+    z-index: -100;
+    transition: 500ms;
+}
+.hamburgermenu ul li {
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.425);
+    padding: 25px;
+}
+.hamburgermenu ul li:last-of-type {
+    border: none;
+}
+.hamburgermenu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 200ms;
+}
+.hamburgermenu ul li a:hover {
+    font-weight: bold;
+}
+/*RESPONSIVNOST HEADERA*/
+@media only screen and (max-width: 905px) {
+    .main-nav .main-nav-menu ul {
+        font-size: 18px;
+    }
+    .main-logo {
+        padding-top: 30px;
+    }
+    .main-nav .main-logo a #logom {
+        height: 55px;
+        width: 25px;
+    }
+    .main-nav .main-logo a #logow {
+        height: 55px;
+        width: 25px;
+    }
+    .main-nav .main-logo a #logotext {
+        height: auto;
+        width: 200px;
+        padding: 0 22px 20px 23px;
+    }
+}
+@media only screen and (max-width: 802px) {
+    .main-nav .main-nav-menu ul {
+        font-size: 18px;
+    }
+    .main-logo {
+        padding-top: 15px;
+    }
+    .main-nav .main-logo a #logom {
+        height: 50px;
+        width: 15px;
+        object-fit: fill;
+    }
+    .main-nav .main-logo a #logow {
+        height: 50px;
+        width: 15px;
+        object-fit: fill;
+    }
+    .main-nav .main-logo a #logotext {
+        height: auto;
+        width: 150px;
+        object-fit: fill;
+        padding: 0 22px 14px 23px;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    header h1::before {
+        top: 140;
+        left: 44%;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .main-nav .main-nav-menu ul {
+        font-size: 16px;
+    }
+    .main-logo {
+        padding-top: 15px;
+    }
+    .main-nav .main-logo a #logom {
+        height: 35px;
+        width: 10px;
+        object-fit: fill;
+    }
+    .main-nav .main-logo a #logow {
+        height: 35px;
+        width: 10px;
+        object-fit: fill;
+    }
+    .main-nav .main-logo a #logotext {
+        height: auto;
+        width: 140px;
+        object-fit: fill;
+        padding: 0 22px 14px 23px;
+    }
+}
+@media only screen and (max-width: 580px) {
+    .main-nav .main-nav-menu {
+        display: none;
+    }
+    .main-nav {
+        justify-content: left;
+    }
+    .main-logo {
+        padding-top: 15px;
+    }
+    .main-nav .main-logo a #logom {
+        height: 50px;
+        width: 50px;
+    }
+    .main-nav .main-logo a #logow {
+        height: 50px;
+        width: 50px;
+    }
+    .main-nav .main-logo a #logotext {
+        height: auto;
+        width: 120px;
+        padding: 0px 0px 15px 0px;
+    }
+    label {
+        display: inline-flex;
+    }
+    #hamburger:checked~.hamburgermenu {
+        z-index: 100;
+    }
+}
+@media only screen and (max-width: 460px) {
+    header h1 {
+        font-size: 20px;
+    }
+    header h1::before {
+        display: none;
+    }
+    .main-nav .main-logo a #logom {
+        height: 40px;
+        width: 30px;
+    }
+    .main-nav .main-logo a #logow {
+        height: 40px;
+        width: 30px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .contact-section .contact-section-social {
+        display: flex;
+        font-size: 10px;
+    }
+    .contact-section .contact-section-ne {
+        display: flex;
+        font-size: 8.8px;
+    }
+}

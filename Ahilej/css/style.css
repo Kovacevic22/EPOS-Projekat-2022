@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+::-webkit-scrollbar {
+    width: 1em;
+    background-color: rgba(68, 68, 68, 0.13);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(15, 15, 15);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(59, 59, 59)
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(37, 37, 37);
+}
+*::selection {
+    background-color: rgb(37, 37, 37);
+}
+/*-------GYM LOCATION-------*/
+.gym-location-section {
+    background-color: rgb(27, 27, 27);
+    border-bottom: 3px solid rgb(22, 22, 22);
+    margin-top: -5px;
+    position: relative;
+}
+.gym-location-section .gym-location-slider {
+    background-color: rgb(31, 31, 31);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gym-location-section .gym-location-slider a {
+   margin-left: 20px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   text-decoration: none;
+   color: orangered;
+   display: flex;
+   position: relative;
+   transition: 500ms all;
+   border: 4px solid rgb(37, 37, 37);
+}
+.gym-location-section .gym-location-slider a img {
+    width: 300px;
+    height: auto;
+}
+.gym-location-section .gym-location-slider span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    height: 40px;
+    font-size: 26px;
+    text-align: center;
+    z-index: 1;
+    font-family: 'Roboto';
+}
+.gym-location-section .gym-location-slider a:hover {
+    color: white;
+    border: 4px solid orangered;
+}
+@media only screen and (max-width: 350px) {
+    .gym-location-section .gym-location-slider a img {
+        width: 200px;
+        height: auto;
+    }
+    .gym-location-section .gym-location-slider span {
+        height: 20px;
+        font-size: 20px;
+    }
+}
+/*-----LOCATION I WEBSHOP SECTION-----*/
+.section-lw-parent {
+    background-color: rgb(27, 27, 27);
+    height: 100%;
+    width: 100%;
+}
+.section-lw-parent .section-lw-child {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+}
+.section-lw-parent .section-lw-child .location-box {
+    background: url('../images/location_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 49%;
+    border: 2px solid orangered;
+    text-align: center;
+    height: 350px;
+    transition: all 500ms;
+}
+.section-lw-parent .section-lw-child .location-box:hover {
+    border: 2px solid rgb(68, 68, 68);
+    color: white;
+}
+.section-lw-parent .section-lw-child .webshop-box {
+    background: url('../images/webshop-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 49%;
+    border: 2px solid orangered;
+    text-align: center;
+    height: 350px;
+    transition: all 500ms;
+}
+.section-lw-parent .section-lw-child .webshop-box:hover {
+    border: 2px solid rgb(68, 68, 68);
+    color: white;
+}
+.section-lw-parent .section-lw-child a {
+    text-decoration: none;
+    color: orangered;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+.section-lw-parent .section-lw-child a h2 {
+    padding-top: 25%;
+}
+@media only screen and (max-width: 1160px) {
+    .section-lw-parent .section-lw-child .location-box {
+        width: 30%;
+        height: 230px;
+        margin: 5px;
+    }
+    .section-lw-parent .section-lw-child .webshop-box {
+        width: 30%;
+        height: 230px;
+        margin: 5px;
+    }
+    .section-lw-parent .section-lw-child {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 980px) {
+    .section-lw-parent .section-lw-child .location-box {
+        width: 100%;
+        height: 540px;
+    }
+    .section-lw-parent .section-lw-child .webshop-box {
+        width: 100%;
+        height: 540px;
+    }
+    .section-lw-parent .section-lw-child {
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .section-lw-parent .section-lw-child .location-box {
+        width: 100%;
+        height: 275px;
+    }
+    .section-lw-parent .section-lw-child .webshop-box {
+        width: 100%;
+        height: 275px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .section-lw-parent .section-lw-child .location-box {
+        width: 100%;
+        height: 220px;
+        font-size: 16px;
+    }
+    .section-lw-parent .section-lw-child .webshop-box {
+        width: 100%;
+        height: 220px;
+        font-size: 16px;
+    }
+}
+/*-----PROGRAMI-----*/
+.section-programs {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(27, 27, 27);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+.section-programs a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+    border: 2px solid rgb(24, 24, 24);
+    background-color: rgb(24, 24, 24);
+    width: 33.3%;
+    height: 310px;
+    font-family: 'Roboto';
+    padding-bottom: 10px;
+}
+.section-programs a h3 {
+    font-size: 25px;
+}
+.section-programs a p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+}
+.section-programs a img{
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+.section-programs .section-programs-gp {
+    transition: 500ms all;
+}
+.section-programs .section-programs-fp {
+    transition: 500ms all;
+}
+.section-programs .section-programs-si {
+    transition: 500ms all;
+}
+.section-programs .section-programs-gp:hover {
+    background: url('../images/hover-grupe-grupni-treninzi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid orangered;
+    color: white;
+}
+.section-programs .section-programs-fp:hover {
+    background: url('../images/hover-grupe-funkcionalni-trening.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid orangered;
+    color: white;
+}
+.section-programs .section-programs-si:hover {
+    background: url('../images/hover-grupe-sportska-ishrana.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid orangered;
+    color: white;
+}
+@media only screen and (max-width:1024px) {
+    .section-programs {
+        padding: 0;
+    }
+    .section-programs a {
+        width: 100%;
+    }
+}
+/*------------------*/
+/*-----KARAKTERISTIKE-----*/
+.section-characteristics {
+    background: url('../images/caract_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+.section-characteristics div {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Roboto';
+}
+.section-characteristics div h3 {
+    color: orangered;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+@media only screen and (max-width:1440px) {
+    .section-characteristics div {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:320) {
+    .section-characteristics div {
+        font-size: 10px;
+    }
+}
+/*-----KONTAKT SEKCIJA-----*/
+.kontakt-section {
+    padding: 40px;
+    background-color: rgb(27, 27, 27);
+}
+.kontakt-section form h3 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Roboto';
+    text-align: center;
+    padding-bottom: 50px;
+}
+.kontakt-section form #fname {
+    width: 33%;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.kontakt-section form #email {
+    width: 33%;
+    padding: 20px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.kontakt-section form #phone {
+    width: 33%;
+    padding: 20px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.kontakt-section form #message {
+    resize: none;
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+}
+.kontakt-section form #kbutton {
+    margin-top: 20px;
+    padding: 15px 25px 15px 25px;
+    background-color: orangered;
+    border: none;
+    font-family: 'Roboto';
+    color: white;
+    font-weight: bold;
+    transition: 1s all;
+    cursor: pointer;
+    border: 2px solid rgb(27, 27, 27);
+}
+.kontakt-section form #kbutton:hover {
+    background-color: rgb(27, 27, 27);
+    color: orangered;
+    border: 2px solid orangered;
+}
+@media only screen and (max-width:1440px) {
+    .kontakt-section form #phone {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .kontakt-section form #email {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .kontakt-section form #fname {
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width:425px) {
+    .kontakt-section form #phone {
+        height: 20px;
+    }
+    .kontakt-section form #email {
+        height: 20px;
+    }
+    .kontakt-section form #fname {
+        height: 20px;
+    }
+    .kontakt-section form #message {
+        height: 200px;
+    }
+    .kontakt-section form h3 {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width:375px) {
+    .kontakt-section form #phone {
+        height: 10px;
+    }
+    .kontakt-section form #email {
+        height: 10px;
+    }
+    .kontakt-section form #fname {
+        height: 10px;
+    }
+    .kontakt-section form #message {
+        height: 150px;
+    }
+    .kontakt-section form h3 {
+        font-size: 40px;
+    }
+}
+footer {
+    background-color: rgb(27, 27, 27);
+    border-top: 2px solid orangered;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+    border-bottom: 2px solid rgb(68, 68, 68);
+}
+footer .footer-contact {
+    align-self: center;
+}
+footer .footer-contact a {
+    display: block;
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    font-family: 'Roboto';
+}
+footer .footer-contact a span {
+    transition: 500ms;
+}
+footer .footer-contact a span:hover {
+    color: orangered;
+}
+footer .footer-contact a i {
+    color: orangered;
+    padding-right: 15px;
+}
+footer .footer-logo {
+    align-self: center;
+}
+footer .footer-logo img {
+    margin-right: 30px;
+}
+footer .footer-social {
+    align-self: center;
+}
+footer .footer-social a {
+    padding-right: 10px;
+}
+@media only screen and (max-width:768px) {
+    footer .footer-contact a {
+        font-size: 14px;
+    }
+    footer .footer-logo img {
+        width: 80px;
+        height: 80px;
+    }
+    footer .footer-social a img {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media only screen and (max-width:425px) {
+    footer .footer-contact a {
+        font-size: 10px;
+    }
+    footer .footer-logo img {
+        display: none;
+    }
+    footer .footer-social a img {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media only screen and (max-width:320px) {
+    footer .footer-contact a {
+        font-size: 10px;
+        padding-top: 10px;
+    }
+    footer .footer-logo img {
+        display: none;
+    }
+    footer .footer-social a img {
+        width: 15px;
+        height: 15px;
+    }
+}
+.after-footer {
+    background-color: rgb(12, 12, 12);
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+.after-footer p a {
+    color: orangered;
+    text-decoration: none;
+}
+#scrollbutton {
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(48, 48, 48, 0.37);
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}

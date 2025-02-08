@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.section-onama {
+    background-color: rgb(19, 19, 19);
+}
+.section-onama .section-onama-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section-onama .section-onama-container .misija {
+    overflow-wrap: break-word;
+}
+.section-onama .section-onama-container .najbolji .najbolji-images {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.section-onama .section-onama-container .najbolji .najbolji-images a{
+    width: 200px;
+    height: 308px;
+    border: 1px solid orangered;
+    position: relative;
+}
+.section-onama .section-onama-container .najbolji .najbolji-images a .upitnik {
+    position: absolute;
+    top: 40%;
+    font-size: 40px;
+    left: 40%;
+    color: orangered;
+    opacity: 0;
+    transition: all 500ms;
+}
+.section-onama .section-onama-container .najbolji .najbolji-images a:hover .upitnik {
+    opacity: 1;
+}
+.section-onama .section-onama-container .najbolji .najbolji-images a:hover .layer {
+    opacity: 1;
+}
+.section-onama .section-onama-container .najbolji .najbolji-images a img {
+    width: 198px;
+    height: 306px;
+}
+.section-onama .section-onama-container .najbolji .najbolji-images a .layer {
+    background-color: rgba(0, 0, 0, 0.479);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 500ms;
+}
+.section-onama .section-onama-container .naslovi {
+    display: flex;
+    padding-bottom: 40px;
+}
+.section-onama .section-onama-container img {
+    width: 50px;
+    height: 50px;
+}
+.section-onama .section-onama-container span {
+    color: white;
+    align-self: center;
+    margin-left: 5px;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+.section-onama .section-onama-container .misija, .najbolji, .uprava, .direkcija {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.section-onama .section-onama-container .misija, .najbolji p {
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+.section-onama .section-onama-container .uprava, .direkcija, ol {
+    color: orangered;
+    font-size: 20px;
+    font-family: 'Roboto';
+    padding-bottom: 30px;
+}
+.section-onama .section-onama-container .uprava, .direkcija, ol li h5 {
+    color: white;
+    padding-bottom: 2px;
+}
+.section-onama .section-onama-container .uprava, .direkcija, ol li p {
+    font-size: 12px;
+}
+.section-onama .section-onama-container .direkcija {
+    border: none;
+    padding-bottom: 30px;
+}
+/* margin-left: 18px;*/
+@media screen and (max-width: 1240px) {
+    .section-onama .section-onama-container .uprava, .direkcija, ol {
+        margin-left: 18px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-onama .section-onama-container .najbolji .najbolji-images a{
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .section-onama .section-onama-container .misija, .najbolji p{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
